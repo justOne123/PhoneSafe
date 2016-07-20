@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:itcast="http://schemas.android.com/apk/res/com.example.phonesafe1"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SettingActivity" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="22sp"
+        android:background="#c6a6cd"
+        android:gravity="center"
+        
+        android:layout_gravity="center_horizontal"
+        android:text="设置中心" />
+    
+    <com.example.phonesafe1.SettingView
+        android:id="@+id/update_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:settingTitle="自动升级"
+        itcast:des_on="自动升级开启"
+        itcast:des_off="自动升级关闭">
+        
+    </com.example.phonesafe1.SettingView>
+    
+    <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#8B8B83"
+            />
+    <com.example.phonesafe1.SettingView
+        android:id="@+id/address_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:settingTitle="显示来电号码归属地"
+        itcast:des_on="显示来电号码归属地开启"
+        itcast:des_off="显示来电号码归属地关闭"
+        >
+    </com.example.phonesafe1.SettingView>
+    <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#8B8B83"
+            />
+    <com.example.phonesafe1.SettingView
+        android:id="@+id/blacknum_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:settingTitle="黑名单拦截"
+        itcast:des_on="黑名单拦截开启"
+        itcast:des_off="黑名单拦截关闭"
+        >
+    </com.example.phonesafe1.SettingView>
+    <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#8B8B83"
+            />
+    <com.example.phonesafe1.view.SettingStytleView
+        android:id="@+id/dialog_ssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:settingTitle="归属地提示框风格"
+        itcast:des_on="活力橙"
+        >
+        
+    </com.example.phonesafe1.view.SettingStytleView>
+    <View 
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#8B8B83"
+            />
+    
+    <com.example.phonesafe1.SettingView
+        android:id="@+id/softlock_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itcast:settingTitle="软件锁"
+        itcast:des_on="软件锁开启"
+        itcast:des_off="软件锁关闭">
+        
+    </com.example.phonesafe1.SettingView>
+   
+    
+</LinearLayout>

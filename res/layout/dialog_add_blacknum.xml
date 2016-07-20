@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:id="@+id/title_bar_tv"
+        android:text="添加黑名单" />
+
+    <EditText
+        android:id="@+id/num_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar_tv"
+        android:hint="黑名单号码" />
+
+    <RadioGroup
+        android:id="@+id/mode_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/num_et" >
+  <!-- GridLayout 取代TableLayout -->
+        <RadioButton
+            android:id="@+id/all_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="全部" />
+
+        <RadioButton
+            android:id="@+id/sms_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="短信" />
+
+        <RadioButton
+            android:id="@+id/call_rb"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="电话" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mode_rg"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="18dp"
+        android:text="添加" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_btn"
+        android:layout_alignBottom="@+id/add_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:text="取消" />
+
+</RelativeLayout>

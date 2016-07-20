@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIM卡变更后\n短信报警安全号码"
+        android:textSize="18sp"
+        />
+    <EditText 
+        android:id="@+id/safe_num_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="安全号码"
+        />
+    <TextView   
+        android:id="@+id/select_contact_tv"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:text=" 选择联系人"
+        android:onClick="selectContact"
+        android:background="@drawable/contact_select"
+        android:gravity="center"
+        android:textSize="18sp"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"
+            android:layout_centerInParent="true"
+            />
+      </RelativeLayout>
+    
+
+</LinearLayout>

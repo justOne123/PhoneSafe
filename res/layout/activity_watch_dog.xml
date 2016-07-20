@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatchDogActivity" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwd_et"
+        android:layout_below="@+id/pwd_et"
+        android:layout_marginTop="28dp"
+        android:onClick="unLock"
+        android:text="解锁" />
+
+    <EditText
+        android:id="@+id/pwd_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:ems="10"
+        android:hint="输入解锁密码" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button1"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/app" />
+
+    <TextView
+        android:id="@+id/appName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/icon_iv"
+        android:layout_alignLeft="@+id/pwd_et"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="48dp"
+        android:textSize="22sp"
+        android:text="手机卫士" />
+
+</RelativeLayout>

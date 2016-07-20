@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+       style="@style/TitleBarStyle" 
+       android:text="高级工具"
+       />
+    <Button 
+        android:onClick="query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_select"
+        android:text="手机号码归属地查询"
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawableRight="@android:drawable/star_on"
+        />
+    <Button 
+        android:onClick="rocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_select"
+        android:text="小火箭"
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawableRight="@android:drawable/star_on"
+        />
+    <Button 
+        android:onClick="backupMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_select"
+        android:text="备份短信"
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawableRight="@android:drawable/star_on"
+        />
+    <Button 
+        android:onClick="lookBackMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contact_select"
+        android:text="备份还原"
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawableRight="@android:drawable/star_on"
+        />
+    
+
+</LinearLayout>

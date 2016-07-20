@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoftManagerActivity" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:id="@+id/title_bar_tv"
+        android:text="软件管理" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_tv" >
+
+        <ListView
+            android:id="@+id/soft_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+        <TextView 
+            android:id="@+id/count_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户程序(7个)"
+            android:background="@android:color/darker_gray"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

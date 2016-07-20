@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itcast="http://schemas.android.com/apk/res/com.example.phonesafe1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过SIM卡绑定:\n更好SIM卡，发送报警短信"
+        android:textSize="18sp"
+        />
+    <com.example.phonesafe1.SettingView 
+        android:id="@+id/bind_sim_sv"
+        itcast:settingTitle="SIM卡绑定"
+        itcast:des_on="SIM卡绑定"
+        itcast:des_off="SIM未绑定"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bind"
+            android:layout_centerInParent="true"
+            />
+    
+	</RelativeLayout>
+</LinearLayout>

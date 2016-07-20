@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:id="@+id/title_bar_tv"
+        android:text="选择联系人"/>
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contact_lv"
+        android:layout_below="@+id/title_bar_tv"
+        ></ListView>
+
+</RelativeLayout>
